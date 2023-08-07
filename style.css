@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(60deg, #ff6596, #68bef8, #d88cff);
+    background-size: 600% 600%;
+    animation: bgAnimateGradient 8s infinite linear;
+}
+
+h2
+{
+    font-size: 2em;
+    color: black;
+    margin: 15px 0;
+}
+
+.btn-group
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.wrapper
+{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button
+{
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: red;
+    border-radius: 30px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+button:nth-child(1)
+{
+    margin-left: -200px;
+    color: white;
+    background: red;
+}
+
+button:nth-child(2)
+{
+    margin-right: -200px;
+    color: white;
+}
+
+@keyframes bgAnimateGradient
+{
+    0%{ background-position: 0 85%;}
+    50%{ background-position: 100% 20%;}
+    100%{background-position: 0% 85%;}
+}
